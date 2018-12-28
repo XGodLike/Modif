@@ -70,6 +70,7 @@ void CDateTrans::_SetDateDict()
 	_weekmap.insert(make_pair("周六",6));
 	_weekmap.insert(make_pair("周日",0));
 	_weekmap.insert(make_pair("周末",0));//周末。当成周日处理
+	_weekmap.insert(make_pair("周天",0));
 	_weekmap.insert(make_pair("下周",7));
 	_weekmap.insert(make_pair("星期一",1));
 	_weekmap.insert(make_pair("星期二",2));
@@ -78,6 +79,7 @@ void CDateTrans::_SetDateDict()
 	_weekmap.insert(make_pair("星期五",5));
 	_weekmap.insert(make_pair("星期六",6));
 	_weekmap.insert(make_pair("星期日",0));
+	_weekmap.insert(make_pair("星期天",0));
 	_weekmap.insert(make_pair("下星期",7));
 	_weekmap.insert(make_pair("礼拜一",1));
 	_weekmap.insert(make_pair("礼拜二",2));
@@ -86,6 +88,7 @@ void CDateTrans::_SetDateDict()
 	_weekmap.insert(make_pair("礼拜五",5));
 	_weekmap.insert(make_pair("礼拜六",6));
 	_weekmap.insert(make_pair("礼拜日",0));
+	_weekmap.insert(make_pair("礼拜天",0));
 	_weekmap.insert(make_pair("下礼拜",7));
 	return;
 }
