@@ -24,6 +24,8 @@ public:
 	void SetResultFile(const string& refile);	
 	//返回结果字符串
 	string GetResult();
+	//判断是否包含某字段
+	bool HashKey(const string& key);
 	//获取字段值
 	string GetInfo(const string& key);	
 };

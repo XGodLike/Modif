@@ -1,6 +1,7 @@
 #pragma once
 #include "define.h"
 #include "Config.h"
+#include "Arith.h"
 #include "Business.h"
 #include "SmsBusiness.h"
 #include "TelBusiness.h"
@@ -32,7 +33,8 @@ enum BUSINESS_TYPE
 	RADIO,
 	WEATHER,
 	STOCK,
-	LIMITLINE
+	LIMITLINE,
+	ARITH
 };
 
 

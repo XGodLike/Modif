@@ -59,6 +59,17 @@ void CBusiness::SetResultFile(const string& refile)
 	_refile = refile;
 }
 
+bool CBusiness::HashKey(const string& key)
+{
+	map<string,string>::iterator it = _infomap.find(key);
+	if (it != _infomap.end())
+	{
+		return true;
+	}
+	return false;
+}
+
+
 string CBusiness::GetInfo(const string& key)
 {
 	map<string,string>::iterator it = _infomap.find(key);

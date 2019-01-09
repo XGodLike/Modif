@@ -33,6 +33,7 @@ void CVcyberBusiness::_SetTypeMap()
 	_typemap.insert(make_pair("weather",WEATHER));
 	_typemap.insert(make_pair("stock",STOCK));
 	_typemap.insert(make_pair("limitline",LIMITLINE));
+	_typemap.insert(make_pair("arith",ARITH));
 }
 
 void CVcyberBusiness::_GetInfo()
@@ -95,6 +96,8 @@ void CVcyberBusiness::_CreateBusiness(const BUSINESS_TYPE type)
 	case NAGIGATE:
 		_business = new CNavigateBusiness();
 		break;
+	case ARITH:
+		_business = new CArith();
 	default:
 		break;
 	}
